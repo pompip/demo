@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <EditText
+
+            android:id="@+id/enter_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_sharp"
+            android:hint="手机号"
+
+            android:inputType="phone"
+            android:paddingBottom="16dp"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:paddingTop="16dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/enter_phone_number"
+            android:layout_alignLeft="@+id/enter_phone_number"
+            android:layout_alignTop="@+id/enter_phone_number"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/delete_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/enter_phone_number"
+            android:layout_alignRight="@+id/enter_phone_number"
+            android:layout_alignTop="@+id/enter_phone_number"
+            android:layout_marginRight="8dp"
+            android:src="@android:drawable/ic_delete"
+            android:paddingRight="8dp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/enter_security_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_sharp"
+            android:hint="请输入验证码"
+            android:padding="16dp"
+            android:textSize="18sp"
+          />
+
+        <Button
+            android:id="@+id/send_security_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_sharp_blue"
+            android:padding="16dp"
+            android:text="获取验证码"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/login_sharp_blue"
+
+        android:id="@+id/login_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:text="登录"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/regist"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户注册"
+            android:textSize="20sp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击同意,即表示您已同意"
+            />
+        <TextView
+            android:textColor="@color/text_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《用户协议》"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

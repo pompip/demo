@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完善注册信息，以便我们了解您的情况" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+
+                <EditText
+
+                    android:id="@+id/new_password_et_activity_login"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_sharp"
+                    android:hint="请输入新密码"
+                    android:inputType="textPassword"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="48dp"
+                    android:paddingRight="48dp"
+                    android:paddingTop="16dp"
+                    android:textSize="20sp" />
+
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/new_password_et_activity_login"
+                    android:layout_alignRight="@+id/new_password_et_activity_login"
+                    android:layout_alignTop="@+id/new_password_et_activity_login"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:drawable/ic_menu_view"
+                    android:paddingRight="8dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+
+                <EditText
+
+                    android:id="@+id/new_password_et"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_sharp"
+                    android:hint="请输入新密码"
+                    android:inputType="textPassword"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="48dp"
+                    android:paddingRight="48dp"
+                    android:paddingTop="16dp"
+                    android:textSize="20sp" />
+
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/new_password_et"
+                    android:layout_alignRight="@+id/new_password_et"
+                    android:layout_alignTop="@+id/new_password_et"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:drawable/ic_menu_view"
+                    android:paddingRight="8dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手持身份证正面照" />
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/show_simple"
+                    android:src="@drawable/u199"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/photo"
+                android:src="@drawable/u171"
+                android:layout_width="320dp"
+                android:layout_height="240dp"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

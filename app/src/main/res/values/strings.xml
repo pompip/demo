@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Demo4</string>
+    <array name="city">
+        <item>武汉</item>
+        <item>鄂州</item>
+        <item>黄冈</item>
+    </array>
+</resources>

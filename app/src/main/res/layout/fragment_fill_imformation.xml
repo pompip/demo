@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="你即将成为快车司机,请完善车辆信息" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/login_sharp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:background="@null"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_weight="1"
+
+            android:id="@+id/spinner_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/city"
+            />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/enter_car_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/login_sharp"
+        android:hint="请输入车牌号"
+        android:padding="8dp" />
+
+    <Spinner
+        android:padding="8dp"
+        android:id="@+id/spinner_car"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_sharp"
+        android:entries="@array/city" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <Chronometer
+
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/next_btn"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_sharp_blue"
+        android:padding="16dp"
+        android:text="下一步"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

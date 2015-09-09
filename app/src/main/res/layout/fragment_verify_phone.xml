@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <EditText
+
+            android:id="@+id/enter_phone_number_et_activity_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_sharp"
+            android:hint="手机号"
+
+            android:inputType="phone"
+            android:paddingBottom="16dp"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:paddingTop="16dp"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/enter_phone_number_et_activity_login"
+            android:layout_alignLeft="@+id/enter_phone_number_et_activity_login"
+            android:layout_alignTop="@+id/enter_phone_number_et_activity_login"
+            android:background="@android:drawable/ic_input_delete"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/enter_phone_number_et_activity_login"
+            android:layout_alignRight="@+id/enter_phone_number_et_activity_login"
+            android:layout_alignTop="@+id/enter_phone_number_et_activity_login"
+            android:layout_marginRight="8dp"
+            android:background="@android:drawable/ic_input_delete"
+            android:paddingRight="8dp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/enter_securitcode_et_activity_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_sharp"
+            android:hint="请输入验证码"
+            android:padding="16dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/reload_securitcode_btn_activity_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_sharp_blue"
+            android:padding="16dp"
+            android:text="50秒后重新获取"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+
+            android:id="@+id/new_password_et_activity_login"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_sharp"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:paddingBottom="16dp"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:paddingTop="16dp"
+            android:textSize="20sp" />
+
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/new_password_et_activity_login"
+            android:layout_alignRight="@+id/new_password_et_activity_login"
+            android:layout_alignTop="@+id/new_password_et_activity_login"
+            android:layout_marginRight="8dp"
+            android:background="@android:drawable/ic_menu_view"
+            android:paddingRight="8dp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="点击下一步,即表示您已同意" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《用户协议》"
+            android:textColor="@color/text_blue" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_btn_activity_login"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_sharp_blue"
+        android:padding="16dp"
+        android:text="下一步"
+        android:textSize="20sp" />
+</LinearLayout>
