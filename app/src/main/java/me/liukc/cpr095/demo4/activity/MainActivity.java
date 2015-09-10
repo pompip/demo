@@ -115,7 +115,6 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
             @Override
             public boolean onDrag(View v, DragEvent event) {
 
-                Log.i(TAG, "onDrag -----------" +event.getAction());
                 return false;
             }
         });
