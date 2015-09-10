@@ -94,6 +94,15 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         registerReceiver(mBroadcastReceiver, intentFilter);
     }
 
+    /**
+     * xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+     * d
+     * d
+     * fefw
+     *添加分支1
+     *
+     */
+
     //开启服务,启动线程
     private void startSocketService() {
 
