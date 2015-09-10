@@ -102,6 +102,8 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
      *添加分支1
      * 在master分支添加内容
      * dev继续添加内容
+     * 合并后继续添加内容
+     * 在添加一点东西
      *
      */
 
